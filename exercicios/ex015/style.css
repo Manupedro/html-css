@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body {
+    background-color: black;
+    color: ivory;
+}
+
+h1 {
+    color: bisque;
+}
+h2 {
+    color: blueviolet;
+}
+p{
+    font-family: cursive;
+}

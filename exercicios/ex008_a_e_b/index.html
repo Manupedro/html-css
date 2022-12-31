@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negrito e Itálico</title>
+</head>
+<body>
+    <h1>Formatações em HTML</h1>
+    <h2>Negrito - Destaque</h2>
+    <p>Pode ser feito com a tag &lt;b&gt; <b>(não semântico)</b></p>
+    <p>Vc pode também usar a tag &lt;strong&gt; <strong>(semântico)</strong></p>
+
+    <h2>Itálico - Ênfase</h2>
+    <p>vc pode <i>usar o itálico com a tag</i> I (n semantica)</p>
+    <p>vc <em>pode escrever itálico semantico</em> com a tag em</p>
+
+    <h2>Marcação de Texto</h2>
+    <p>Vc pode ter um texto <mark>marcado, usando a tag mark</mark></p>
+
+    <h2>Textos pequenos e grandes</h2>
+    <p>Vc pode ter<big> textos grandes</big> e pequenos usando a tag obsçoleta big e a atual small <small>(tem sentido, tipo letra ed contrato miúda)</small></p>
+
+    <h2>Texto Deletado</h2>
+    <p>Esse texto foi escrito mais <del>n deve ser mais considerado</del></p>
+
+    <h2>Texto Inserido</h2>
+    <p>Esse texto foi escrito e depois inserimos esse parágrafo com o nome da pessoa tipo em contrato: <ins>Pedro Carlos de Oliveira dos Santos</ins> (semântico)</p>
+    <p>Vc pode usar o <u>NÃO SEMANTICO TBM COM A TAG U</u></p>
+
+    <h2>Sobreescrito</h2>
+    <p>x<sup>20</sup>+3</p>
+
+    <h2>Subescrito</h2>
+    <p>H<sub>2</sub>O</p>
+
+    <!--ex009-->
+    <h1>Outras Formatações</h1>
+    <h2>Código fonte e Pré-formatação</h2>
+    <p>Vc pode usar a <mark>tag &lt;code&gt;</mark> que deixa as letras monoespaçadas</p>
+    <code>if(num > 10){
+        console.log("Numero inserido é maior q 10")    
+    }
+    </code>
+
+    <p>Além disso, pra preservar essa foramatação <mark>&lt;pre&gt;</mark></p>
+    <pre>
+<code>if(num > 10){
+    console.log("Numero inserido é maior q 10")
+}
+</code>
+    </pre>
+
+    <h2>Citação Simples</h2>
+    <p>Segundo o pai do amigo do Guanabara: <q>o computador é um burro mt rápido</q>. Usando a tag&lt;q&gt;</p>
+
+    <h2>Citação completa com link de busca para mecanismos internos do google</h2>
+    <p>CItação de um livro usando a tag <mark>&lt;blockquote cite=""&gt;</mark></p>
+    <blockquote cite="https://www.pensador.com/frase/NzA3OTQx/">
+        Você diz que ama a chuva, mas você abre seu guarda-chuva quando chove. Você diz que ama o sol, mas você procura um ponto de sombra quando o sol brilha. Você diz que ama o vento, mas você fecha as janelas quando o vento sopra. É por isso que eu tenho medo. Você também diz que me ama.
+    </blockquote>
+
+    <h2>Abreviações</h2>
+    <p>Coloque<mark> as tags <code> < abbr> </code></mark> Estou estudando <abbr title="Hyper Text Markup Language">HTMl</abbr> e <abbr title="Cascading Style sheets">CSS</abbr></p>
+
+    <h2>Tag de Texto invertido</h2>
+    <p>Escrevendo um texto invertido com a tag <code> < bdo></bdo></code></p>
+    <p><bdo dir="rtl">Eu amo essa tag invertida!</bdo></p>
+</body>
+</html>

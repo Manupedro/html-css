@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Mídias em HTML</h1>
+    <h2>Imagens Dinâmicas</h2>
+    <picture>
+        <source media="(min-width: 1600px)" srcset="./img/1600px.png" type="image/png">
+
+        <source media="(min-width: 750px)" srcset="./img/736.jpg" type="image/jpg">
+        
+        <img src="img/300.jpg">
+    </picture>
+
+    <h2>Áudios no seu site</h2>
+    <audio src="audios/happy-mistake.mp3" preload="metadata" controls></audio>
+</body>
+</html>
