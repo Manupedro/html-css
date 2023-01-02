@@ -6,8 +6,24 @@ body{
 }
 
 h1{
-    color:darkmagenta;
+    color:white;
+    background-color: black;
 }
 h1#principal{
     text-align: center;
+    color:white;
+    background-color: darkmagenta;
+}
+
+.easy-level{
+    color: green;
+}
+.mid-level{
+    color: rgb(219, 143, 2);
+}
+.hard-level{
+    color:red;
+}
+.marked{
+    background-color: rgba(255, 255, 0, 0.438);
 }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elemento</title>
+    <style>
+        a{
+            color: rgb(255, 0, 166);
+            text-decoration: none;
+        }
+        a:visited{
+            /*dps de visitado*/
+            color:aqua;
+        }
+        a:active{ /*ao clicar o link fica amarelo*/
+            color: yellow;
+        }
+        a:hover{
+            /*ao passar fica azul*/
+            color: blue;
+        }
+        a::after{
+            /*coloca texto no final*/
+            content: '...[isso é um link]';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        
+        <li><a href="https://docs.google.com/document/d/1MnQXHdSJD-igl8-vM15HXSTVkjp7e2O585C6XUK_pVY/edit#">Acesse o Docs</a></li>
+        <li><a href="https://www.youtube.com/watch?v=edjih_b_NBQ">Acessar a música do Tarcísio</a></li>
+        <li><a href="https://www.google.com/search?q=o+que+significa+pseudo&oq=o+que+significa+pseudo&aqs=edge..69i57j0i22i30l7.4528j0j1&sourceid=chrome&ie=UTF-8">Pesquisa</a></li>
+    </ul>
+</body>
+</html>
