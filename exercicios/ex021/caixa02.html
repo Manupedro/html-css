@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0px;
+           
+        }
+        header{
+            text-align: center;
+            background-color: gray;
+            margin-top: 0px;
+        }
+        header>h1{
+            margin-top:0px;
+            padding-top: 5px;
+        }
+        nav{
+            text-align: center;
+            background-color: gray;
+            padding: 5px;
+        }
+        nav > a{
+            color: white;
+            text-decoration: none;
+            
+        }
+        a{
+            padding: 10px;
+            margin: 10px;
+            /*border: 5px solid yellow;*/
+        }
+        nav > a:hover{
+            font-size: 2em;
+            background-color: rgb(59, 59, 59);
+        }
+        section{
+            text-align: justify;
+            background-color: aliceblue;
+            padding: 4px 10px;
+            margin: 10px;
+            border-radius: 10px;
+            /* offset-x | offset-y | blur-radius | spread-radius | color */
+            box-shadow: 3px 3px 5px 1px  rgba(169, 194, 215, 0.621);
+        }
+        section > h2{
+            text-align: center;
+        }
+        aside{
+            text-align: center;
+            background-color: rgba(0, 0, 255, 0.192);
+            padding: 5px;
+        }
+        footer{
+            
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 4px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        input:checked + label{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <!--Tags de Agrupamento (sem semântica)-->
+    <div></div>
+    <span></span>
+
+    <!--Tags de agrupamento (com semantica)-->
+    <header>
+        <h1>Meu site</h1>
+        <!--Cabeçalho-->
+        <nav>
+            <!--Div que vai ter a navegação-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <!--Conteúdo Principal-->
+
+        <section>
+            <!--Seções, ex: notícias-->
+            <h2>Notícias</h2>
+            <article>
+                <!--Notícia 1-->
+                <h3>Notícia 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint placeat, sapiente illo ex unde adipisci facilis exercitationem quae amet sequi beatae ipsum odit a impedit nihil ratione molestias soluta corrupti.</p>
+            </article>
+            <article>
+                <h3>Notícia 2</h3>
+                <!--Notícia 2-->
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio commodi debitis excepturi sit reiciendis corrupti fugit, reprehenderit cumque, iste adipisci voluptatem eveniet ut deserunt totam quis provident repellendus. Culpa, nisi?</p>
+                <aside>
+                    <!--Conteúdo referente ao artigo, ex: nome do autor do artigo-->
+                    <p>Feito por Pedro Carlos</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <!--Rodapé-->
+        <p>Desenvolvido durante o estudo de HTML5</p>
+    </footer>
+    <input id='check' type="checkbox" style="display: none;">
+    <label for="check">Clique e ative</label>
+
+    
+</body>
+</html>
