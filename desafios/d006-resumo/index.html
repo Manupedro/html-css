@@ -105,9 +105,31 @@
             <li><abbr title="margin: auto;">Como centralizar automaticamente uma div?</abbr></li>
             <li><abbr title="vw: Largura da VieWport
                 vh: Altura da VieWport">O que é vw vh</abbr></li>
+            <li><abbr title="/*as classes podem ser aplicadas a qualquer objeto, mas aqui to explicitando que esse seletor é somente para as divs*/
+                div.video{
+                    display: block;
+                    background-color: var(--cor5);
+                    margin: 0px -20px 30px -20px;
+                    padding: 20px;
+                    padding-bottom: 50%;
+                
+                    position: relative;
+                }
+                
+                div.video > iframe{
+                    position: absolute;
+                
+                    /*distancia até a parte de cima*/
+                    top: 5%;
+                    /*distancia até o lado esquerdo*/
+                    left: 5%;
+                    height: 90%;
+                    width: 90%;
+                }">Como centralizar um vídeo?</abbr></li>
             
             <li> Fonts:
                 <ul>
+                    <li><abbr title="line-height: 2em;">Espaçamento entre linhas.</abbr></li>
                     <li><abbr title="Use sempre o px e o em (ele é referente ao tamanho padrão, para parágrafos o padrão é 16px e para título h1 é 32px). 16px = 1em">Tamanho das Fontes</abbr></li>
                     <li><abbr title="font-size">Tamanho da fonte</abbr></li>
                     <li><abbr title="font-weight: lighter, normal, bold, bolder">Peso da Font</abbr></li>
@@ -132,6 +154,14 @@
                         /*border: [tamanho] [tipo: solid, dashed (tracejado)] [cor]*/
                         /*outline: [tamanho] [tipo: solid, dashed (tracejado)] [cor]*/">ShortHands para Margem, borda, padding e outline</abbr></li>
                     <li><abbr title="só mudar o display: block/inline/inline-block. Lembrando que inline block é tipo bloco só q com caracteristica de n bloco">Como mudar entre box-level e Inline-level?</abbr></li>
+                    <li><abbr title="ul{
+                        list-style-type: '\2611'; /*simbolo da lista*/
+                        list-style-position: inside; /*posição da bolinha, se vai ficar pra dentro ou pra fora do documento*/
+                    
+                        columns: 2;
+                        padding: 0px 10px;
+                        
+                    }">Css para listas</abbr></li>
                 </ul>
                 
             </li>
@@ -173,8 +203,54 @@
 
             </ul>
         </li> 
+    
+        <li><abbr title="/*Pseudo Classe root - é como se fosse o espaço para variáveis globais*/
+            /*Criando variáveis em css*/
+            :root{
+                --cor0: #c5ebd6;
+            
+                --fontPadrao: Arial, Verdana, Helvetica, sans-serif;
+                --font-destaque: 'Bebas Neue', cursive;
+                --font-android: 'android', cursive;
+            }
+            
+            na hora de usar: var(nome da variável)">Como criar variáveis em CSS?</abbr></li>
+        <li><abbr title="*{
+            margin: 0px;
+            padding: 0px;
+        }
+        ">Como editar todos os elementos de uma só vez no css?</abbr></li>
+        <li>Responsividade
+            <ul>
+                <li>Max/min-width/height</li>
+                <li>Use porcentagens também</li>
+            </ul>
+        </li>
+        <li>Observações
+            <ol>
+                <li>As imagens por padrão não são um bloco. Se ela n centralizar, tente dar um display:block;</li>
+                <li><abbr title="Essa notação significa q o parágrafo pode estar em qualquer nível dentro de main, inclusive dentro de outras tags
+                    já usando > significa q ele tá imediatamente dentro de main
+                    main p{
+                        margin: 15px 0px;
+                        text-indent: 20px;
+                        text-align: justify;
+                    }">O que signfica? <code>main p</code></abbr></li>
 
+                <li><abbr title="Seletor que mexe em todos os parágrafos imediatamente dentro de main, mas se tiver dentro de outras dives filhas que tiverem parágrafos, ele n mexe.">O que signfica? <code>main > p</code></abbr></li>
+                <li><abbr title="as classes podem ser aplicadas a qualquer objeto, mas aqui to explicitando que esse seletor é somente para as divs
+                    div.video{
+                      
+                    }">Como criar uma classe somente para um tipo de elemento?</abbr></li>
 
+            </ol>
+
+        </li>
+        <li>Animações
+            <ul>
+                <li><abbr title="transition-duration: 0.5s;">Transições</abbr></li>
+            </ul>
+        </li>
 
 
 
