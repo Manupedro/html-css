@@ -260,7 +260,41 @@
                 <li><abbr title="background-size: 100px 100px;">Como editar o tamanho da imagem de backgournd?</abbr></li>
                 <li><abbr title="background-repeat: no-repeat;
                     background-repeat: repeat-x;
-                    background-repeat: repeat-y;">Como escolher as repetições da imagem</abbr></li>
+                    background-repeat: repeat-y;">Como escolher as repetições da imagem?</abbr></li>
+                <li><abbr title="background-position: left top; Obs.: vc pode variar em nove posições diferentes, top, center e bottom na esquerda, no centro e na direita">Como escolher a posição inicial das imagens</abbr></li>
+                <li><abbr title="/*background-size: auto;*/
+                    /*background-size: contain; Deixa a imagem 100% exibida sem cortes*/
+                    background-size: cover; /*cobre 100% da viewport sem esticar a imagem*/
+                    background-size: 100px; /*Exibe em um tmanho fixo*/
+                    background-size: 100px; /*Exibe em uma porcentagem fixa*/
+                    
+                    OBS.: cuidado para o body n estar adimensional">Como preencher uma imagem no fundo</abbr></li>
+                <li><abbr title="background-attachment: scroll; -> rola o back junto com o conteúdo
+                    background-attachment: fixed; -> mantém o back fixado">Como manter o backgorund fixo ou móvel?</abbr></li>
+                <li><abbr title="#container{
+                    height: 500px;
+                    width: 500px;
+        
+                    position: relative;
+        
+                    background-color: purple;
+                    background-position: center center;
+                    background-size: 100% 100%;
+                }
+        
+                #content{
+                    height: 200px;
+                    width: 200px;
+        
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    
+                    background-color: yellow;
+                    background-position: center center;
+                    background-size: 100% 100%;
+                }"><mark>Como centralizar uma div?</mark></abbr></li>
             </ul>
         </li>
 
