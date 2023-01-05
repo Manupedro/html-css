@@ -19,9 +19,11 @@ header{
     font-family: var(--font1);
     font-variant: small-caps;
     text-align: center;
+    font-size: 5vw;
 }
 header > p{
     font-family: var(--font2);
+    font-variant: small-caps;
     
 }
 header a{
@@ -43,6 +45,7 @@ main p{
     background-position: bottom;
     background-attachment: fixed;
     background-size: cover;
+    box-shadow: inset 6px 6px 6px rgba(0, 0, 0, 0.242);
     height: 500px;
 
     position: relative;
@@ -52,9 +55,11 @@ main p{
     color: white;
     text-shadow: 1px 1px 1px black;
     width: 300px;
-
+    
     position: absolute;
     top: 20%;
+
+
 }
 #imagem1{
     background-image: url('./imagens/background001.jpg');
