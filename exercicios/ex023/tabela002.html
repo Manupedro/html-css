@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            position: relative;
+            /*border: 1px solid black;*/
+        }
+        thead > tr > th{
+            position: sticky;
+
+            top: -1px;
+            background-color:black;
+        }
+        td, th{
+            border: 1px solid black;
+            
+        }
+        div{
+            border-top: solid;
+        }
+        .unificar{
+            border: 0px solid black;
+        }
+
+        /*Efeito zebrado 2n é par e 2n-1 é ímpar (pode usar enve and odd)*/
+        tbody > tr:nth-child(2n){
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas Grandes</h1>
+    <!--Anatomia
+        Table
+            CAPTION
+            THEAD
+                TR,Th, TD
+                th é tipo td, só q semantico
+            TBODY
+                TR, Th, TD
+            FOOT
+                TR, Th, TD
+    -->
+    <table>
+        <thead> <!--Cabeça da tabela-->
+            <tr> <!--Linha-->
+                <th scope="col">Região</th> 
+                <th scope="col">Estados</th>
+                <th scope="col">Municípios</th>
+                <th scope="col">População</th>
+                <th scope="col">%</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Norte</th>
+                <td>
+                    <ul>
+                        <li>Acre</li>
+                        <li>Amapá</li>
+                        <li>Amazonas</li>
+                        <li>Pará</li>
+                        <li>Rondônia</li>
+                        <li>Roraimaa</li>
+                        <li>Tocantins</li>
+                    </ul>
+                </td>
+                <td>450</td>
+                <td rowspan="5" colspan="2">207 750 291</td>
+            </tr>
+            <tr>
+                <th scope="row">Nordeste</th>
+                <td>
+                    <ul>
+                        <li>Alagoas</li>
+                        <li>Bahia</li>
+                        <li>Ceará</li>
+                        <li>Maranhão</li>
+                        <li>Paraiba</li>
+                        <li>Pernambuco</li>
+                        <li>Piauí</li>
+                        <li>Rio grande do Norte</li>
+                        <li>Sergipe</li>
+                    </ul>
+                </td>
+                <td>1793</td>
+                <td class="unificar"></td>
+                <td class="unificar"></td>
+            </tr>
+           
+            <tr>
+                <th scope="row">Centro Oeste</th>
+                <td>
+                    <ul>
+                        <li>Distrito Federal</li>
+                        <li>Goisás</li>
+                        <li>Mato Grosso</li>
+                        <li>Mato Grosso do Sul</li>
+                    </ul>
+                </td>
+                <td>467</td>
+                
+            </tr>
+            <tr>
+                <th scope="row">Sudeste</th>
+                <td>
+                    <ul>
+                        <li>Espírito Santo</li>
+                        <li>Minas</li>
+                        <li>São Paulo</li>
+                        <li>Rio de Janeiro</li>
+                    </ul>
+                </td>
+                <td>1668</td>
+                
+            </tr>
+            <tr>
+                <th scope="row">Sul</th>
+                <td>
+                    <ul>
+                        <li>Parana</li>
+                        <li>Santa Catarina</li>
+                        <li>Rio grande do sul</li>
+                        <li>1191</li>
+                    </ul>
+                </td>
+                <td>1191</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Brasil</th>
+            <td>26 + DF</td>
+            <td>5570</td>
+        </tfoot>
+    </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequatur doloribus natus nam molestiae facilis? Cupiditate quos molestiae repellat deserunt soluta quod, a harum corrupti! Sunt accusamus dolore reiciendis ea? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore alias mollitia sunt, omnis corrupti dolor rerum veritatis, dolores accusantium reiciendis culpa perspiciatis? Veniam officia quo iste nulla hic recusandae reiciendis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio eum architecto sint dolore velit quasi explicabo et iure ex assumenda! Quis doloremque rerum, odio magni obcaecati tempora maiores odit dolorem?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequatur doloribus natus nam molestiae facilis? Cupiditate quos molestiae repellat deserunt soluta quod, a harum corrupti! Sunt accusamus dolore reiciendis ea? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore alias mollitia sunt, omnis corrupti dolor rerum veritatis, dolores accusantium reiciendis culpa perspiciatis? Veniam officia quo iste nulla hic recusandae reiciendis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio eum architecto sint dolore velit quasi explicabo et iure ex assumenda! Quis doloremque rerum, odio magni obcaecati tempora maiores odit dolorem?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequatur doloribus natus nam molestiae facilis? Cupiditate quos molestiae repellat deserunt soluta quod, a harum corrupti! Sunt accusamus dolore reiciendis ea? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore alias mollitia sunt, omnis corrupti dolor rerum veritatis, dolores accusantium reiciendis culpa perspiciatis? Veniam officia quo iste nulla hic recusandae reiciendis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio eum architecto sint dolore velit quasi explicabo et iure ex assumenda! Quis doloremque rerum, odio magni obcaecati tempora maiores odit dolorem?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequatur doloribus natus nam molestiae facilis? Cupiditate quos molestiae repellat deserunt soluta quod, a harum corrupti! Sunt accusamus dolore reiciendis ea? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore alias mollitia sunt, omnis corrupti dolor rerum veritatis, dolores accusantium reiciendis culpa perspiciatis? Veniam officia quo iste nulla hic recusandae reiciendis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio eum architecto sint dolore velit quasi explicabo et iure ex assumenda! Quis doloremque rerum, odio magni obcaecati tempora maiores odit dolorem?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequatur doloribus natus nam molestiae facilis? Cupiditate quos molestiae repellat deserunt soluta quod, a harum corrupti! Sunt accusamus dolore reiciendis ea? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore alias mollitia sunt, omnis corrupti dolor rerum veritatis, dolores accusantium reiciendis culpa perspiciatis? Veniam officia quo iste nulla hic recusandae reiciendis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio eum architecto sint dolore velit quasi explicabo et iure ex assumenda! Quis doloremque rerum, odio magni obcaecati tempora maiores odit dolorem?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequatur doloribus natus nam molestiae facilis? Cupiditate quos molestiae repellat deserunt soluta quod, a harum corrupti! Sunt accusamus dolore reiciendis ea? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore alias mollitia sunt, omnis corrupti dolor rerum veritatis, dolores accusantium reiciendis culpa perspiciatis? Veniam officia quo iste nulla hic recusandae reiciendis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio eum architecto sint dolore velit quasi explicabo et iure ex assumenda! Quis doloremque rerum, odio magni obcaecati tempora maiores odit dolorem?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequatur doloribus natus nam molestiae facilis? Cupiditate quos molestiae repellat deserunt soluta quod, a harum corrupti! Sunt accusamus dolore reiciendis ea? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore alias mollitia sunt, omnis corrupti dolor rerum veritatis, dolores accusantium reiciendis culpa perspiciatis? Veniam officia quo iste nulla hic recusandae reiciendis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio eum architecto sint dolore velit quasi explicabo et iure ex assumenda! Quis doloremque rerum, odio magni obcaecati tempora maiores odit dolorem?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequatur doloribus natus nam molestiae facilis? Cupiditate quos molestiae repellat deserunt soluta quod, a harum corrupti! Sunt accusamus dolore reiciendis ea? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore alias mollitia sunt, omnis corrupti dolor rerum veritatis, dolores accusantium reiciendis culpa perspiciatis? Veniam officia quo iste nulla hic recusandae reiciendis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio eum architecto sint dolore velit quasi explicabo et iure ex assumenda! Quis doloremque rerum, odio magni obcaecati tempora maiores odit dolorem?</p>
+</body>
+</html>

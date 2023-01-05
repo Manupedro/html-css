@@ -129,6 +129,7 @@
             
             <li> Fonts:
                 <ul>
+                    <li><abbr title="Font-size: 10vw; ou algo que envolva porcentagem, principalmente referente à largura">Como criar textos responsivos?</abbr></li>
                     <li><abbr title="line-height: 2em;">Espaçamento entre linhas.</abbr></li>
                     <li><abbr title="Use sempre o px e o em (ele é referente ao tamanho padrão, para parágrafos o padrão é 16px e para título h1 é 32px). 16px = 1em">Tamanho das Fontes</abbr></li>
                     <li><abbr title="font-size">Tamanho da fonte</abbr></li>
@@ -242,7 +243,9 @@
                     div.video{
                       
                     }">Como criar uma classe somente para um tipo de elemento?</abbr></li>
-
+                <li><abbr title="header a, footer a{
+                }
+                significa q vai servir para os dois ">Separando css por vírgulas</abbr></li>
             </ol>
 
         </li>
@@ -295,10 +298,75 @@
                     background-position: center center;
                     background-size: 100% 100%;
                 }"><mark>Como centralizar uma div?</mark></abbr></li>
+            <li><abbr title="font-variant: small-caps; //serve para colocar o texto todo em maiúsculo só q com maior e menores
+                text-transform: uppercase; //coloca tudo em maiuscula
+                ">Como colocar o texto todo em maiúsculas?</abbr></li>
+                <li><abbr title="
+                    font-size: 5vw;">Como fazer o texto crescer junto com a tela?</abbr></li>
             </ul>
         </li>
 
+        <li>Tabelas
+            <ul>
+                <li><abbr title="Table = tabela
+                    Table row = tr (linha da tabela)
+                        Table header = th (cabeçalho)
+                        table data = td (dados - células)">Hierarquia das Tabelas (TABELAS SIMPLES)</abbr>
+                    </li>
+                <li><abbr title="
+                table{
+                    border-collapse: collapse;
+                }
+                td{
+                    border: 1px solid black;
+                } ">Como colocar grades nas células?</abbr></li>
+            
+                <li><abbr title="text-align: center; /*Alinhamento  horizontal do texto na caixa*/
+                    vertical-align: middle; /*Alinhamento Vertical do texto na caixa*/">Alinhamento de texto na Tabela</abbr></li>
+                <li><abbr title="<Anatomia
+                    Table
+                        CAPTION (legenda da tabela)
+                        THEAD
+                            TR,Th, TD
+                            th é tipo td, só q semantico
+                        TBODY
+                            TR, Th, TD
+                        FOOT
+                            TR, Th, TD
+                ">Anatomia de Tabelas GRANDES</abbr></li>
+                <li><abbr title="rowspan='5' colspan='2'">Como fazer mesclagem de célula?</abbr></li>
+                <li><abbr title="th sempre é usado para título, para dizer semanticamente o escopo, colocamos:
+                    scope:'row' ou scope='col' ou scope='rowgroup' scope='colgroup'. Para saber qual usar, se pergunte: Essa table head cuida de quem? Uma coluna? Um grupo de linhas?
+                    
+                    *Cuidado: Scope só existe para th">Escopo de um título</abbr></li>
+                <li><abbr title="/*Efeito zebrado 2n é par e 2n-1 é ímpar (pode usar enve and odd)*/
+                    tbody > tr:nth-child(2n){
+                        background-color: gray;
+                    }">Efeito Zebrado</abbr></li>
+                <li><abbr title="table{
+                    border-collapse: collapse;
+                    position: relative;
+                    /*border: 1px solid black;*/
+                }
+                thead > tr > th{
+                    position: sticky;
+                    top: -1px;
+                    background-color:black;
+                }">Como criar cabeçalho fixo em tabelas</abbr></li>
+                <li><abbr title="table
+                    #colgroup#
+                        #col style='background-color: red;span='2'#
+                        #col style='background-color: aqua;#
+                    #colgroup#
+                table">Como editar várias colunas de uma vez só?</abbr></li>
+                <li><abbr title="#div style='overflow-x: auto;'#
+                    #table#/table#
+                #/div#">Como tirar a rolagem da tabela?</abbr></li>
+            </ul>
+           
+        </li>
 
+        
 
 
 
