@@ -3,11 +3,11 @@ var input = document.querySelector("#comprimento");
 var resposta = document.querySelector("#resposta");
 
 btn.onclick = function () {
-  var x = input.value / 10;
+  var x = input.value * 2.54;
   resposta.innerHTML = Math.ceil(x * 120)
 }
 
 input.onkeyup = function(){
-  var x = input.value / 10;
+  var x = input.value * 2.54;
   resposta.innerHTML = Math.ceil(x * 120)
 }
